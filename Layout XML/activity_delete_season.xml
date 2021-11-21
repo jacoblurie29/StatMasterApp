@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseball_field"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".DeleteSeason">
+
+    <TextView
+        android:id="@+id/DeleteSeasonTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorDivider"
+        android:fontFamily="@font/faster_one_tf"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Delete Season"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toTopOf="@+id/DeleteSeasonTitleBottomGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/DeleteSeasonTitleTopGuideline" />
+
+    <Button
+        android:id="@+id/DeleteSeasonBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button_grey"
+        android:text="@string/back"
+        android:textColor="@color/colorIcons"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/DeleteSeasonConfirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button_red"
+        android:text="Delete Season"
+        android:padding="8dp"
+        android:textColor="@color/colorIcons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/DeleteSeasonSpinner" />
+
+    <Spinner
+        android:id="@+id/DeleteSeasonSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button_grey"
+        android:popupBackground="@drawable/round_button_grey"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/DeleteSeasonConfirmButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/DeleteSeasonTitleBottomGuideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/DeleteSeasonTitleBottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/DeleteSeasonTitleTopGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".15" />
+</android.support.constraint.ConstraintLayout>

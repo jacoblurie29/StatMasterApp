@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/baseball_diamond"
+android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+tools:context="com.developer.jacob.statmaster.LoginActivity">
+
+    <TextView
+        android:id="@+id/Welcome_Back_Text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorDivider"
+        android:fontFamily="@font/faster_one_tf"
+        android:paddingBottom="8dp"
+        android:text="@string/welcome_back"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/fields_top_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/welcome_back_top_guideline" />
+
+<android.support.constraint.Guideline
+    android:id="@+id/fields_top_guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.35" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toTopOf="@id/fields_bottom_guideline"
+    app:layout_constraintTop_toBottomOf="@id/fields_top_guideline"
+    app:layout_constraintVertical_bias="0.39">
+
+
+    <EditText
+        android:id="@+id/Username_Email_FillIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="@color/colorDivider"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorDarkText"
+        android:textSize="30sp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/colorIcons"/>
+
+    <EditText
+        android:id="@+id/Password_FillIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:background="@color/colorDivider"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorDarkText"
+        android:textSize="30sp"
+        android:textColor="@color/colorIcons"/>
+
+
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:gravity="center"
+        android:background="@drawable/round_button_grey"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:textAlignment="center" />
+
+</LinearLayout>
+
+<android.support.constraint.Guideline
+    android:id="@+id/fields_bottom_guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.87" />
+
+<Button
+    android:id="@+id/sign_in_button"
+    android:layout_width="0dp"
+    android:layout_height="48dp"
+    android:layout_marginBottom="10sp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/round_button"
+    android:fontFamily="sans-serif"
+    android:text="@string/sign_in"
+    android:onClick="signInExistingUser"
+    android:textColor="@color/colorSecondaryText"
+    android:textSize="24sp"
+    app:layout_constraintBottom_toTopOf="@id/sign_in_bottom_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/fields_bottom_guideline" />
+
+<android.support.constraint.Guideline
+    android:id="@+id/sign_in_bottom_guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent=".97" />
+
+<android.support.constraint.Guideline
+    android:id="@+id/welcome_back_top_guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.16" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button_grey"
+        android:text="@string/back"
+        android:textColor="@color/colorIcons"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

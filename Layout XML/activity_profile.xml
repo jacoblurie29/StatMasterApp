@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseball_field"
+    android:configChanges="orientation"
+    android:screenOrientation="portrait"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".ProfileActivity">
+
+    <Button
+        android:id="@+id/ProfileBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_button_grey"
+        android:text="@string/back"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/faster_one_tf"
+        android:gravity="center"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="46sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/ProfileBackButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ProfileBackButton"
+        app:layout_constraintTop_toTopOf="@+id/ProfileBackButton" />
+
+    <TextView
+        android:id="@+id/EmailTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+
+        android:background="@drawable/round_button"
+        android:padding="4dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/UsernameTextView"
+        app:layout_constraintEnd_toStartOf="@+id/RightMiddleVerticleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TopProfileGuideline" />
+
+    <TextView
+        android:id="@+id/UsernameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:padding="4dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@id/NameTextView"
+        app:layout_constraintEnd_toStartOf="@+id/RightMiddleVerticleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EmailTextView" />
+
+    <TextView
+        android:id="@+id/NameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:padding="4dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@id/PrimaryPositionTextView"
+        app:layout_constraintEnd_toStartOf="@+id/RightMiddleVerticleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameTextView" />
+
+    <TextView
+        android:id="@+id/PrimaryPositionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:padding="4dp"
+        android:text="Primary Position"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/SecondaryPositionTextView"
+        app:layout_constraintEnd_toStartOf="@+id/ProfilePositionsRightGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameTextView" />
+
+    <TextView
+        android:id="@+id/SecondaryPositionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:padding="4dp"
+        android:text="Secondary Position"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/MiddleProfileGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/ProfilePositionsRightGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PrimaryPositionTextView" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/TopProfileGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".14" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/MiddleProfileGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.81" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/RightMiddleVerticleGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/LeftMiddleVerticleGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".35" />
+
+    <TextView
+        android:id="@+id/ProfileUserEmailTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button_transparent"
+        android:paddingBottom="2dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/EmailTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/LeftMiddleVerticleGuideline"
+        app:layout_constraintTop_toTopOf="@+id/EmailTextView" />
+
+    <TextView
+        android:id="@+id/ProfileUserSecondaryPositionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/round_button_transparent"
+        android:paddingBottom="2dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SecondaryPositionTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ProfilePositionsLeftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/SecondaryPositionTextView" />
+
+    <TextView
+        android:id="@+id/ProfileUserPrimaryPositionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/round_button_transparent"
+        android:paddingBottom="2dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/PrimaryPositionTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ProfilePositionsLeftGuideline"
+        app:layout_constraintTop_toTopOf="@+id/PrimaryPositionTextView" />
+
+    <TextView
+        android:id="@+id/ProfileUserUsernameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button_transparent"
+        android:paddingBottom="2dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/UsernameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/LeftMiddleVerticleGuideline"
+        app:layout_constraintTop_toTopOf="@+id/UsernameTextView" />
+
+    <TextView
+        android:id="@+id/ProfileUserNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button_transparent"
+        android:paddingBottom="2dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/NameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/LeftMiddleVerticleGuideline"
+        app:layout_constraintTop_toTopOf="@+id/NameTextView" />
+
+
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/ProfilePositionsRightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58" />
+    <android.support.constraint.Guideline
+        android:id="@+id/ProfilePositionsLeftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <Spinner
+        android:id="@+id/ResetOptionsSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:popupBackground="@drawable/round_button_grey"
+        android:background="@drawable/round_button_grey"
+        app:layout_constraintTop_toBottomOf="@id/MiddleProfileGuideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ResetGoButton"/>
+
+    <Button
+        android:id="@+id/ResetGoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go"
+        android:background="@drawable/round_button"
+        android:textColor="@color/colorIcons"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center"
+
+        app:layout_constraintLeft_toRightOf="@id/ResetOptionsSpinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MiddleProfileGuideline" />
+
+</android.support.constraint.ConstraintLayout>

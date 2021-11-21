@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseball_field"
+    tools:context=".ViewSeasonStats">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/navigation" />
+
+    <Button
+        android:id="@+id/backButtonViewStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button_grey"
+        android:text="@string/back"
+        android:textColor="@color/colorIcons"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/TeamLeftOneTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TeamLeftOneTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:padding="4dp"
+        android:text="TextView"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="27sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/TeamLeftTwoTextView"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TeamTopGuideLine" />
+
+    <TextView
+        android:id="@+id/TeamLeftTwoTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="27sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/TeamLeftThreeTextView"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeamLeftOneTextView" />
+
+    <TextView
+        android:id="@+id/TeamLeftThreeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="27sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/TeamLeftFourTextView"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeamLeftTwoTextView" />
+
+    <TextView
+        android:id="@+id/TeamLeftFourTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="27sp"
+        android:padding="4dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/TeamLeftTextViewFive"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TeamLeftThreeTextView" />
+
+    <TextView
+        android:id="@+id/TeamLeftTextViewFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="27sp"
+        android:padding="4dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/TeamLeftTextViewSix"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeamLeftFourTextView" />
+
+    <TextView
+        android:id="@+id/TeamLeftTextViewSix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:padding="4dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="27sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TeamLeftTextViewFive" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/TeamTopGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/TeamRightMiddleGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <TextView
+        android:id="@+id/TeamRightTextViewOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/TeamLeftOneTextView"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/TeamLeftOneTextView" />
+
+    <TextView
+        android:id="@+id/TeamRightTextViewTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/TeamLeftTwoTextView"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TeamLeftTwoTextView" />
+
+    <TextView
+        android:id="@+id/TeamRightTextViewThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/TeamLeftThreeTextView"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TeamLeftThreeTextView" />
+
+    <TextView
+        android:id="@+id/TeamRightTextViewFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/TeamLeftFourTextView"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TeamLeftFourTextView" />
+
+    <TextView
+        android:id="@+id/TeamRightTextViewFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/TeamLeftTextViewFive"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TeamLeftTextViewFive" />
+
+    <TextView
+        android:id="@+id/TeamRightTextViewSix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/TeamLeftTextViewSix"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TeamLeftTextViewSix" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/TeamLeftMiddleGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".56" />
+
+    <TextView
+        android:id="@+id/TitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/faster_one_tf"
+        android:text="TextView"
+        android:textColor="@color/colorIcons"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/TeamLeftOneTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backButtonViewStats"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/battingTotalsGuidelineLeftMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".3" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftLeftOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsLeftLeftTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/battingTotalsGuidelineLeftMiddle"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsGuidelineTop" />
+
+
+    <TextView
+        android:id="@+id/battingTotalsLeftLeftTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsLeftLeftThree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/battingTotalsGuidelineLeftMiddle"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsLeftLeftOne" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftLeftThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsLeftLeftFour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/battingTotalsGuidelineLeftMiddle"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsLeftLeftTwo" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftLeftFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsLeftLeftFive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/battingTotalsGuidelineLeftMiddle"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsLeftLeftThree" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftLeftFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsLeftLeftSix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/battingTotalsGuidelineLeftMiddle"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsLeftLeftFour" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftLeftSix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsLeftLeftSeven"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/battingTotalsGuidelineLeftMiddle"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsLeftLeftFive" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftLeftSeven"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsLeftLeftEight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/battingTotalsGuidelineLeftMiddle"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsLeftLeftSix" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftLeftEight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/battingTotalsGuidelineLeftMiddle"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsLeftLeftSeven" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/battingTotalsGuidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".09" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftRightOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsLeftLeftOne"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsLeftRightGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsGuidelineMiddle"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsLeftLeftOne" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftRightTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsLeftLeftTwo"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsLeftRightGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsGuidelineMiddle"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsLeftLeftTwo" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftRightThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsLeftLeftThree"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsLeftRightGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsGuidelineMiddle"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsLeftLeftThree" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftRightFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsLeftLeftFour"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsLeftRightGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsGuidelineMiddle"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsLeftLeftFour" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftRightFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsLeftLeftFive"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsLeftRightGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsGuidelineMiddle"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsLeftLeftFive" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftRightSix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsLeftLeftSix"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsLeftRightGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsGuidelineMiddle"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsLeftLeftSix" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftRightSeven"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsLeftLeftSeven"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsLeftRightGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsGuidelineMiddle"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsLeftLeftSeven" />
+
+    <TextView
+        android:id="@+id/battingTotalsLeftRightEight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsLeftLeftEight"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsLeftRightGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsGuidelineMiddle"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsLeftLeftEight" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/battingTotalsGuidelineMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".47" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/battingTotalsLeftRightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".28" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightLeftOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsRightLeftTwo"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightLeftGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsRightRightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsGuidelineTop" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightLeftTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsRightLeftThree"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightLeftGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsRightRightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsRightLeftOne" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightLeftThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsRightLeftFour"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightLeftGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsRightRightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsRightLeftTwo" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightLeftFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsRightLeftFive"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightLeftGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsRightRightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsRightLeftThree" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightLeftFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsRightLeftSix"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightLeftGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsRightRightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsRightLeftFour" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightLeftSix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsRightLeftSeven"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightLeftGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsRightRightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsRightLeftFive" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightLeftSeven"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/battingTotalsRightLeftEight"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightLeftGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsRightRightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsRightLeftSix" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightLeftEight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightLeftGuideline"
+        app:layout_constraintEnd_toStartOf="@id/battingTotalsRightRightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/battingTotalsRightLeftSeven" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/battingTotalsRightLeftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".51" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/battingTotalsRightRightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".81" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightRightOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsRightLeftOne"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightOverlapGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsRightLeftOne" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightRightTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsRightLeftTwo"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightOverlapGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsRightLeftTwo" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightRightThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsRightLeftThree"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightOverlapGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsRightLeftThree" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightRightFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsRightLeftFour"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightOverlapGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsRightLeftFour" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightRightFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsRightLeftFive"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightOverlapGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsRightLeftFive" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightRightSix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsRightLeftSix"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightOverlapGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsRightLeftSix" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightRightSeven"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsRightLeftSeven"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightOverlapGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsRightLeftSeven" />
+
+    <TextView
+        android:id="@+id/battingTotalsRightRightEight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:text="TextVie"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/battingTotalsRightLeftEight"
+        app:layout_constraintStart_toEndOf="@id/battingTotalsRightOverlapGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/battingTotalsRightLeftEight" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/battingTotalsRightOverlapGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".79" />
+
+    <TextView
+        android:id="@+id/StatsTextViewOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/StatsTextViewTwo"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButtonViewStats" />
+
+    <TextView
+        android:id="@+id/StatsTextViewTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/StatsTextViewThree"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StatsTextViewOne" />
+
+    <TextView
+        android:id="@+id/StatsTextViewThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/StatsTextViewFour"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StatsTextViewTwo" />
+
+    <TextView
+        android:id="@+id/StatsTextViewFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/StatsTextViewFive"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/StatsTextViewThree" />
+
+    <TextView
+        android:id="@+id/StatsTextViewFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/StatsTextViewSix"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StatsTextViewFour" />
+
+    <TextView
+        android:id="@+id/StatsTextViewSix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/StatsTextViewSeven"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/StatsTextViewFive" />
+
+    <TextView
+        android:id="@+id/StatsTextViewSeven"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/StatsTextViewEight"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/StatsTextViewSix" />
+
+    <TextView
+        android:id="@+id/StatsTextViewEight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toStartOf="@+id/TeamRightMiddleGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/StatsTextViewSeven" />
+
+    <TextView
+        android:id="@+id/StatsTextViewRightOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/StatsTextViewOne"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/StatsTextViewOne" />
+
+    <TextView
+        android:id="@+id/StatsTextViewRightTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/StatsTextViewTwo"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/StatsTextViewTwo" />
+
+    <TextView
+        android:id="@+id/StatsTextViewRightThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/StatsTextViewThree"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/StatsTextViewThree" />
+
+    <TextView
+        android:id="@+id/StatsTextViewRightFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/StatsTextViewFour"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/StatsTextViewFour" />
+
+    <TextView
+        android:id="@+id/StatsTextViewRightFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/StatsTextViewFive"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/StatsTextViewFive" />
+
+    <TextView
+        android:id="@+id/StatsTextViewRightSix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/StatsTextViewSix"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/StatsTextViewSix" />
+
+    <TextView
+        android:id="@+id/StatsTextViewRightSeven"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/StatsTextViewSeven"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/StatsTextViewSeven" />
+
+    <TextView
+        android:id="@+id/StatsTextViewRightEight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_transparent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/StatsTextViewEight"
+        app:layout_constraintStart_toEndOf="@id/TeamLeftMiddleGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/StatsTextViewEight" />
+
+
+
+</android.support.constraint.ConstraintLayout>

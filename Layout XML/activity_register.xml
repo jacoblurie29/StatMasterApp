@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseball_diamond"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context="com.developer.jacob.statmaster.RegisterActivity">
+
+    <TextView
+        android:id="@+id/Register_Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorDivider"
+        android:fontFamily="@font/faster_one_tf"
+        android:paddingBottom="16dp"
+        android:text="@string/let_s_get_nstarted"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="50sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Register_Title_Guideline" />
+
+    <EditText
+        android:id="@+id/new_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorDivider"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorIcons"
+        android:textColorHint="@color/colorDarkText"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/new_user_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_user_fill_in_start" />
+
+    <EditText
+        android:id="@+id/new_user_email"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorDivider"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textColor="@color/colorIcons"
+        android:textColorHint="@color/colorDarkText"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/new_user_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_user_name" />
+
+    <EditText
+        android:id="@+id/new_user_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorDivider"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/colorIcons"
+        android:textColorHint="@color/colorDarkText"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/new_user_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_user_email" />
+
+    <EditText
+        android:id="@+id/new_user_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorDivider"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColor="@color/colorIcons"
+        android:textColorHint="@color/colorDarkText"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/new_user_confirm_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_user_username" />
+
+
+    <EditText
+        android:id="@+id/new_user_confirm_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorDivider"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColor="@color/colorIcons"
+        android:textColorHint="@color/colorDarkText"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/new_user_register_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_user_password" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Register_Title_Guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/new_user_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/new_user_fill_in_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.39" />
+
+    <Button
+        android:id="@+id/new_user_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/round_button_grey"
+        android:padding="2dp"
+        android:text="@string/back_button_new_user"
+        android:textColor="@color/colorIcons"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@id/vertical_back_button_guideline"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_back_button_guideline" />
+
+    <Button
+        android:id="@+id/new_user_register_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/round_button"
+        android:text="@string/register"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/new_user_bottom_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_back_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".02" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_back_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".02" />
+
+
+</android.support.constraint.ConstraintLayout>

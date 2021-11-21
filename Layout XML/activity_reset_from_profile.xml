@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResetFromProfile"
+    android:background="@drawable/baseball_field"
+    android:screenOrientation="portrait"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <TextView
+        android:id="@+id/ResetPasswordTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/reset_password"
+        android:textSize="45sp"
+        android:textColor="@color/colorIcons"
+        android:fontFamily="@font/faster_one_tf"
+        android:background="@color/colorDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BackToProfileButton"
+        app:layout_constraintBottom_toTopOf="@id/CurrentPasswordET"
+         />
+
+    <EditText
+        android:id="@+id/CurrentPasswordET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/current_password"
+        android:padding="12dp"
+        android:background="@drawable/round_button_transparent"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/NewPasswordET"
+        app:layout_constraintTop_toBottomOf="@+id/ResetPasswordTitleTextView" />
+
+    <EditText
+        android:id="@+id/NewPasswordET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:padding="12dp"
+        android:background="@drawable/round_button_transparent"
+        android:hint="@string/new_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/NewPasswordConfirmET"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentPasswordET" />
+
+    <EditText
+        android:id="@+id/NewPasswordConfirmET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/round_button_transparent"
+        android:hint="@string/confirm_new_password"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ResetPasswordOfficialButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewPasswordET" />
+
+    <Button
+        android:id="@+id/ResetPasswordOfficialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/reset_password"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorIcons"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewPasswordConfirmET" />
+
+    <Button
+        android:id="@+id/BackToProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorIcons"
+        android:layout_marginTop="8dp"
+        android:text="@string/back_to_profile"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:background="@drawable/round_button_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ResetPasswordTitleTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/ChangePositionSpinner"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:popupBackground="@drawable/round_button_grey"
+        android:background="@drawable/round_button_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/NewPasswordConfirmET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/NewPasswordET" />
+
+</android.support.constraint.ConstraintLayout>
