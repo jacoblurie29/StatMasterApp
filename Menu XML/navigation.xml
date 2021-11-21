@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_teamStats"
+        android:icon="@drawable/trophy"
+        android:title="Team" />
+
+    <item
+        android:id="@+id/navigation_battingTotals"
+        android:icon="@drawable/baseball_bat"
+        android:title="Batting Totals" />
+
+    <item
+        android:id="@+id/navigation_battingStats"
+        android:icon="@drawable/baseball_helmet"
+        android:title="Batting Stats" />
+
+    <item
+        android:id="@+id/navigation_pitchingTotals"
+        android:icon="@drawable/baseball_mitt"
+        android:title="Pitching Totals" />
+
+    <item
+        android:id="@+id/navigation_pitchingStats"
+        android:icon="@drawable/ball_baseball"
+        android:title="Pitching Stats" />
+
+
+
+</menu>
