@@ -184,12 +184,6 @@ public class RegisterActivity extends AppCompatActivity {
             }
 
 
-
-
-
-
-
-
             // TODO: Call create FirebaseUser() here
             if (cancel || finalCancel) {
                 focusView.requestFocus();
