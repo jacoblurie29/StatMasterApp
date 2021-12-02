@@ -184,7 +184,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
 
 
-            // TODO: Call create FirebaseUser() here
+            // Call create FirebaseUser() here
             if (cancel || finalCancel) {
                 focusView.requestFocus();
                 showErrorDialog();
@@ -201,7 +201,6 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         private boolean isEmailValid(String email) {
-            // You can add more checking logic here.
             return email.contains("@");
         }
 
