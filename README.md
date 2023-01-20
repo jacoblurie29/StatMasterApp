@@ -1,4 +1,5 @@
 # StatMasterApp
+
 Repository contains relevant files from the development of a baseball statistics tracking android application.
 
 The files included are the backend java files related and the frontend XML files.
